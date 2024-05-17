@@ -1,15 +1,15 @@
-#Run the Flask server:
+# Run the Flask server:
 
 python app.py
 
 The server will start running at http://127.0.0.1:5000/.
 
-Endpoints
+## Endpoints
 Create a Book
 
-URL: /books
-Method: POST
-Request Body:
+# URL: /books
+# Method: POST
+# Request Body:
 
 {
     "name": "Book Title",
@@ -18,17 +18,17 @@ Request Body:
 }
 
 
-Response:
+# Response:
 
 {
     "message": "Book created successfully",
     "name": "Book Title"
 }
 
-#Get All Books
-URL: /books
-Method: GET
-Response:
+## Get All Books
+# URL: /books
+# Method: GET
+# Response:
 
 [
     {
@@ -39,26 +39,26 @@ Response:
     }
 ]
 
-Update a Book
-URL: /books/<book_name>
-Method: PUT
-Request Body:
+## Update a Book
+# URL: /books/<book_name>
+# Method: PUT
+# Request Body:
 
 {
     "img": "https://example.com/new-image.jpg",
     "summary": "Updated summary here."
 }
 
-Response:
+# Response:
 
 {
     "message": "Book updated successfully"
 }
 
-Delete a Book
-URL: /books/<book_name>
-Method: DELETE
-Response:
+## Delete a Book
+# URL: /books/<book_name>
+# Method: DELETE
+# Response:
 
 {
     "message": "Book deleted successfully"
